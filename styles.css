@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    padding: 36px 50px 77px 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: #45852D;
+    text-align: center;
+    padding-bottom: 43px;
+}
+
+.filter {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: #363636;
+    padding-bottom: 45px;
+}
+
+.filter span {
+    padding-right: 30px;
+}
+
+input {
+    width: 418px;
+    height: 50px;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding-left: 30px;
+    outline: none;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.item {
+    width: 379px;
+    height: 381px;
+    background-color: #F8F8F8;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+    text-decoration: none;
+}
+
+.item__images {
+    width: 377px;
+    height: 227px;
+    padding-bottom: 15px;
+}
+
+.item__wrapper {
+    padding: 15px 69px 17px 20px;
+}
+
+.item__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    padding-bottom: 2px;
+}
+
+.item__address {
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 15px;
+}
+
+.item__price {
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 7px;
+}
+
+.item__price_amount {
+    font-weight: bold;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button_more {
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    outline: none;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+}
+
+.button_more::after {
+    content: url(./images/arrow.svg);
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+@media (max-width: 491px) {
+
+    .wrapper {
+        padding: 25px 15px 77px 15px;
+    }
+
+    input {
+        width: 290px;
+    }
+    .item {
+        width: 288px;
+        margin-bottom: 30px;
+    }
+
+    .item__images {
+        width: 288px;
+        height: auto;
+    }
+
+}
